@@ -1,7 +1,7 @@
 <h1>Index /Tweets </h1>
 
 <%@tweets.each do |show_tweet|%>
-<%= show_tweet.to_a %>
+<p><b>Tweet ID: </b> <%=show_tweet["_id"]%>, <b>Tweet text: </b> <%=show_tweet["text"] %>, <b>Tweet Positivity Score: </b><%=show_tweet["sentiment"]%> </p>
 <br/><br/>
 <% end %>
 
@@ -11,7 +11,4 @@
 </b>    
 </p>
 <%= link_to "Go to Search", tweets_path %>
-    
-    
-
 </footer>

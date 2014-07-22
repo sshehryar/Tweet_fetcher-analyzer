@@ -5,7 +5,15 @@
 
 <p>
 <% @load_tweets.each do |disp| %>
-<%=disp%>
+    <%=disp%>
+    
 <br/><br/>
+<p><b>Positivity Score of Tweet: <%= sentiments.score(disp)["pos"]%></b></p>
+<br/>
 <%end%>
 </p>
+
+<footer>
+<b>Note:</b>
+<ul>Positive Sentiment Score is based on a 0-1 scale with <b>"0"</b> being the <b>lowest</b> and <b>"1"</b> being the <b>highest</b>.</ul>
+</footer>

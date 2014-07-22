@@ -47,7 +47,10 @@ class Tweet
     
             #tweets_array.each {|tweet_score| Tweet.update_attribute(:sentiment => sentiments.score(tweet_score)["pos"])}
             
+                
+                
     
      ################################################################################################################################   
 end
 
+#Tweet.each {|tweet_score| Tweet.update_attribute(:sentiment => sentiments.score(tweet_score)["pos"])}
