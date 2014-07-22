@@ -9,8 +9,13 @@ class HomeController < ApplicationController
     
     def load_tweets
     @load_tweets = Tweet.pull_tweets(params[:hashtag])    
+    end
     
-    end    
+    def score_search
+      
+    @show_tweet = Tweet.all.where(:sentiment => :score ) 
+    
+    end
 
 
 end
