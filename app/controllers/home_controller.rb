@@ -2,10 +2,6 @@ class HomeController < ApplicationController
 
     def index 
     @tweets = Tweet.all.to_a
-        #@tweets.each do |update_sent|
-        #score = sentiments.score(update_sent["text"])["pos"]
-        #update_sent.update_attributes! :sentiment => score 
-        end
     end
     
     def tweet_form
