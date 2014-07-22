@@ -1,0 +1,11 @@
+<h1> Your Search Results: </h1>
+
+<li><%= link_to "Back to Search" , tweets_path %></li>
+
+
+<p>
+<% @load_tweets.each do |disp| %>
+<%=disp%>
+<br/><br/>
+<%end%>
+</p>
