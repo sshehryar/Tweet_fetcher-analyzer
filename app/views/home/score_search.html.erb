@@ -1,6 +1,7 @@
 <h1>Displaying Query Results</h1>
 <br/>
 <% @show_tweet.each do |display|%>
-<%= display %>
+<%= display.to_a %>
 <br/><br/>
+
 <%end%>
