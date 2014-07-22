@@ -1,8 +1,8 @@
+require 'sentiments'
 class Tweet
   include Mongoid::Document
-    require 'sentiments'
-class Tweet 
-  include Mongoid::Document
+   
+
 
   field :text,      type: String
   field :sentiment, type: String 
@@ -27,7 +27,7 @@ class Tweet
         
        
         #puts tweets_array
-        
+        end
             
         #########################################################################################################################
         
@@ -47,7 +47,7 @@ class Tweet
     
             #tweets_array.each {|tweet_score| Tweet.update_attribute(:sentiment => sentiments.score(tweet_score)["pos"])}
             
-    end
+    
      ################################################################################################################################   
 end
-end
+
