@@ -4,3 +4,14 @@
 <%= show_tweet.to_a %>
 <br/><br/>
 <% end %>
+
+<footer>
+<p><b>Current Tweet Count: 
+    <%= Tweet.count %>
+</b>    
+</p>
+<%= link_to "Go to Search", tweets_path %>
+    
+    
+
+</footer>
