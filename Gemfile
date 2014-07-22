@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 
 gem 'sentiments'
+
+gem 'twitter'

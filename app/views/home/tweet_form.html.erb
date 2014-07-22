@@ -1,0 +1,5 @@
+<%= form_tag("/display", method: "POST") do %>
+  <%= label_tag(:hashtag, "Search for:") %>
+  <%= text_field_tag(:hashtag) %>
+  <%= submit_tag("Search") %>
+<% end %>

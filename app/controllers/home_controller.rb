@@ -8,7 +8,7 @@ class HomeController < ApplicationController
     end
     
     def load_tweets
-        
+    @load_tweets = Tweet.pull_tweets(params[:hashtag])    
     end    
 
 
