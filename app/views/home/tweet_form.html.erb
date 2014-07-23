@@ -1,5 +1,20 @@
-<%= form_tag("/display", method: "POST") do %>
+
+<ol>
+<h4>Use This To Search For Particular Hashtags</h4>
+<li>  <%= form_tag("/load", method: "POST") do %>
   <%= label_tag(:hashtag, "Search for:") %>
   <%= text_field_tag(:hashtag) %>
   <%= submit_tag("Search") %>
 <% end %>
+</li>
+<br/><br/>
+<h4>Use This To Filter Tweets According to Sentiment Score</h4>  
+<br/>
+<li>
+<%= form_tag("/display", method: "GET") do %>
+  <%= label_tag(:sentiment, "Filter According to Sentiment Score:") %>
+  <%= text_field_tag(:sentiment) %>
+  <%= submit_tag("Search") %>
+<% end %>
+</li>    
+</ol>

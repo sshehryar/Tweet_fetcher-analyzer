@@ -8,7 +8,7 @@
     <%=disp%>
     
 <br/><br/>
-<p><b>Positivity Score of Tweet: <%= sentiments.score(disp)["pos"]%></b></p>
+<p><b>Positivity Score of Tweet: <%= sentiments.score(disp)["pos"].round(1)%></b></p>
 <br/>
 <%end%>
 </p>

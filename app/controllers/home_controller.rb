@@ -12,13 +12,14 @@ class HomeController < ApplicationController
     end
     
     def score_search
+        p params
+        p ".................................."
       
     #@show_tweet = Tweet.where(params[:sentiment] => :score ).to_a 
-     @show_tweet = Tweet.where(sentiment: "#{params[:score]}").to_a
-       
-        
-
-    
+    #@show_tweet = Tweet.where(sentiment: params[:score]).to_a
+#    @show_tweet = Tweet.where(sentiment: 0.5)
+    @show_tweet = Tweet.where(:sentiment => params[:sentiment].to_s)
+    #@show_tweet = Tweet.where(params[:sentiment] => params[:score.to_s])    
     end
 
 
